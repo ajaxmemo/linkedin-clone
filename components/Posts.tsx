@@ -16,7 +16,7 @@ const Posts =  ({ user, post }: { user: any, post: IPostDocument }) => {
   const [liked, setLiked] = useState<boolean>(false);
   const [commentbar, setCommentbar] = useState(false);
 
-  const likePost = async (postId: string) => {
+  const likePost = async (postId: any) => {
     try {
       setLiked(!liked);
       let likes = await getLikes(postId);
