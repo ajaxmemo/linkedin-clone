@@ -7,7 +7,7 @@ import { log } from 'console'
 import { Anybody } from 'next/font/google'
 import { commentPosts } from '@/lib/serverAction'
 
-const Commentinput =  ({user,postId}:{user:any,postId:string}) => {
+const Commentinput =  ({user,postId}:{user:any,postId:any}) => {
  
   const  [textInuput, setTextInuput] = useState<string>("");
   const textChangeHandler = (e:any)=>{
